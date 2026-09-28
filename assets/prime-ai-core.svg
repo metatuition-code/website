@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" fill="none">
+<defs>
+  <radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="matrix(340 290 -290 340 370 350)" gradientUnits="userSpaceOnUse"><stop stop-color="#D8F9FF"/><stop offset=".12" stop-color="#6AC9FF"/><stop offset=".33" stop-color="#3455B5"/><stop offset=".69" stop-color="#111C46"/><stop offset="1" stop-color="#050914"/></radialGradient>
+  <radialGradient id="glow"><stop stop-color="#8EEBFF" stop-opacity=".8"/><stop offset="1" stop-color="#498AFF" stop-opacity="0"/></radialGradient>
+  <linearGradient id="metal" x1="160" x2="740" y1="210" y2="690" gradientUnits="userSpaceOnUse"><stop stop-color="#E7F6FF"/><stop offset=".19" stop-color="#61A4FF"/><stop offset=".42" stop-color="#E6D9FF"/><stop offset=".64" stop-color="#5688F5"/><stop offset=".83" stop-color="#A8F7FF"/><stop offset="1" stop-color="#5369D8"/></linearGradient>
+  <linearGradient id="orbit" x1="140" x2="760" y1="350" y2="570" gradientUnits="userSpaceOnUse"><stop stop-color="#5E81FF"/><stop offset=".45" stop-color="#C7F5FF"/><stop offset=".68" stop-color="#587DF2"/><stop offset="1" stop-color="#8EEBFF"/></linearGradient>
+  <filter id="blur" x="60" y="60" width="780" height="780" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="34"/></filter>
+  <filter id="shine" x="0" y="0" width="900" height="900" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <clipPath id="ball"><circle cx="450" cy="450" r="244"/></clipPath>
+</defs>
+<circle cx="450" cy="450" r="310" fill="url(#glow)" opacity=".4" filter="url(#blur)"/>
+<g opacity=".83" stroke="url(#metal)" stroke-width="13"><ellipse cx="450" cy="450" rx="355" ry="142" transform="rotate(-32 450 450)"/><ellipse cx="450" cy="450" rx="340" ry="132" transform="rotate(53 450 450)" opacity=".82"/></g>
+<circle cx="450" cy="450" r="244" fill="url(#core)" stroke="url(#metal)" stroke-width="12"/>
+<g clip-path="url(#ball)"><circle cx="450" cy="450" r="244" fill="url(#glow)" opacity=".35"/><path d="M170 476c114-119 360-188 568-91M191 566c144-126 327-140 531-45M230 359c130 80 294 106 475 45M282 250c-44 125-14 316 109 453M592 216c-113 170-106 356 26 487" stroke="#90D9FF" stroke-opacity=".5" stroke-width="2"/><g fill="#D8F7FF" filter="url(#shine)"><circle cx="308" cy="345" r="8"/><circle cx="562" cy="307" r="5"/><circle cx="620" cy="492" r="7"/><circle cx="369" cy="590" r="5"/><circle cx="464" cy="272" r="4"/><circle cx="265" cy="483" r="4"/><circle cx="517" cy="565" r="4"/></g><circle cx="451" cy="452" r="92" fill="url(#glow)"/><circle cx="450" cy="450" r="25" fill="#D7FBFF" opacity=".9" filter="url(#shine)"/></g>
+<ellipse cx="450" cy="450" rx="354" ry="142" transform="rotate(-32 450 450)" stroke="url(#orbit)" stroke-width="7" filter="url(#shine)"/>
+<g fill="url(#metal)" stroke="#D9F9FF" stroke-width="2"><circle cx="178" cy="376" r="14"/><circle cx="721" cy="520" r="12"/><circle cx="545" cy="130" r="10"/><circle cx="350" cy="760" r="11"/></g>
+<g fill="#A7EFFF" opacity=".8"><circle cx="197" cy="228" r="3"/><circle cx="710" cy="255" r="4"/><circle cx="154" cy="584" r="3"/><circle cx="765" cy="650" r="3"/><circle cx="622" cy="155" r="3"/><circle cx="275" cy="730" r="4"/><circle cx="686" cy="375" r="3"/><circle cx="368" cy="158" r="2"/></g>
+</svg>
+
